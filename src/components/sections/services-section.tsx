@@ -15,31 +15,31 @@ export function ServicesSection() {
           }`}
         >
           <h2 className="mb-2 font-sans text-5xl font-light tracking-tight text-foreground md:text-6xl lg:text-7xl">
-            Услуги
+            Методы защиты
           </h2>
-          <p className="font-mono text-sm text-foreground/60 md:text-base">/ Наши компетенции</p>
+          <p className="font-mono text-sm text-foreground/60 md:text-base">/ Как защитить себя</p>
         </div>
 
         <div className="grid gap-8 md:grid-cols-2 md:gap-x-16 md:gap-y-12 lg:gap-x-24">
           {[
             {
-              title: "Веб-разработка",
-              description: "Создание современных веб-приложений любой сложности",
+              title: "Антивирусные программы",
+              description: "Установите надёжный антивирус и регулярно обновляйте базы данных угроз. Лидеры рынка: Kaspersky, ESET, Bitdefender, Windows Defender.",
               direction: "top",
             },
             {
-              title: "UI/UX Дизайн",
-              description: "Проектирование удобных и красивых интерфейсов",
+              title: "Обновления системы",
+              description: "Своевременно устанавливайте обновления ОС и приложений — большинство вирусов эксплуатируют известные уязвимости в устаревшем ПО.",
               direction: "right",
             },
             {
-              title: "Мобильные приложения",
-              description: "Кроссплатформенная разработка для iOS и Android",
+              title: "Резервное копирование",
+              description: "Регулярно делайте бэкапы важных данных на внешний носитель или облако. Это единственная защита от вирусов-шифровальщиков.",
               direction: "left",
             },
             {
-              title: "Консалтинг",
-              description: "Техническая экспертиза и стратегическое планирование",
+              title: "Цифровая гигиена",
+              description: "Не открывайте подозрительные письма и ссылки, используйте сложные пароли и двухфакторную аутентификацию для всех аккаунтов.",
               direction: "bottom",
             },
           ].map((service, i) => (

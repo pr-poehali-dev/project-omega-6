@@ -15,32 +15,46 @@ export function WorkSection() {
           }`}
         >
           <h2 className="mb-2 font-sans text-5xl font-light tracking-tight text-foreground md:text-6xl lg:text-7xl">
-            Проекты
+            Виды вирусов
           </h2>
-          <p className="font-mono text-sm text-foreground/60 md:text-base">/ Избранные работы</p>
+          <p className="font-mono text-sm text-foreground/60 md:text-base">/ Классификация угроз</p>
         </div>
 
         <div className="space-y-6 md:space-y-8">
           {[
             {
               number: "01",
-              title: "ТехноСтарт",
-              category: "Корпоративный портал",
-              year: "2024",
+              title: "Троянские программы",
+              category: "Маскируются под легальное ПО, крадут данные и открывают удалённый доступ",
+              year: "Высокий риск",
               direction: "left",
             },
             {
               number: "02",
-              title: "АльфаТрейд",
-              category: "Финтех платформа",
-              year: "2024",
+              title: "Черви и сетевые вирусы",
+              category: "Самостоятельно распространяются по сети, перегружают системы и каналы связи",
+              year: "Критический",
               direction: "right",
             },
             {
               number: "03",
-              title: "МедиаПульс",
-              category: "Медиа сервис",
-              year: "2023",
+              title: "Вирусы-шифровальщики",
+              category: "Блокируют доступ к файлам и требуют выкуп за расшифровку данных",
+              year: "Критический",
+              direction: "left",
+            },
+            {
+              number: "04",
+              title: "Шпионское ПО",
+              category: "Следят за действиями пользователя, перехватывают пароли и переписку",
+              year: "Высокий риск",
+              direction: "right",
+            },
+            {
+              number: "05",
+              title: "Рекламное ПО (Adware)",
+              category: "Показывают навязчивую рекламу, собирают данные о поведении в сети",
+              year: "Средний риск",
               direction: "left",
             },
           ].map((project, i) => (
