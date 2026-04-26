@@ -21,7 +21,7 @@ export function AboutSection({ scrollToSection }: { scrollToSection?: (index: nu
               <h2 className="mb-3 font-sans text-3xl font-light leading-[1.1] tracking-tight text-foreground md:mb-4 md:text-6xl lg:text-7xl">
                 О проекте
                 <br />
-                <span className="text-foreground/40">и его целях</span>
+                <span className="text-foreground/40">зачем это всё</span>
               </h2>
             </div>
 
@@ -32,10 +32,10 @@ export function AboutSection({ scrollToSection }: { scrollToSection?: (index: nu
               style={{ transitionDelay: "200ms" }}
             >
               <p className="max-w-md text-sm leading-relaxed text-foreground/90 md:text-lg">
-                Этот сайт создан для того, чтобы каждый мог разобраться в теме компьютерных вирусов: как они работают, чем опасны и как от них защититься.
+                Я сделал этот сайт как проект по информатике, потому что тема вирусов мне кажется по-настоящему важной. Многие люди не знают даже базовых вещей — и из-за этого теряют файлы, деньги и нервы.
               </p>
               <p className="max-w-md text-sm leading-relaxed text-foreground/90 md:text-lg">
-                Знание — лучшая защита. Понимая угрозы, вы сможете уберечь свои данные, устройства и близких от кибератак.
+                Здесь я постарался объяснить всё простым языком: без сложных терминов и занудных учебников. Если хоть один человек после этого сайта не попадётся на фишинг — значит, не зря старался.
               </p>
             </div>
           </div>
@@ -43,9 +43,9 @@ export function AboutSection({ scrollToSection }: { scrollToSection?: (index: nu
           {/* Right side - Stats with creative layout */}
           <div className="flex flex-col justify-center space-y-6 md:space-y-12">
             {[
-              { value: "5+", label: "Видов угроз", sublabel: "Подробно разобраны и классифицированы", direction: "right" },
-              { value: "4", label: "Метода защиты", sublabel: "Практические советы и инструменты", direction: "left" },
-              { value: "100%", label: "Бесплатно", sublabel: "Образовательный проект для всех", direction: "right" },
+              { value: "6", label: "Видов вирусов", sublabel: "С описанием, примерами и историями", direction: "right" },
+              { value: "4", label: "Метода защиты", sublabel: "Конкретные советы, которые реально работают", direction: "left" },
+              { value: "млрд $", label: "Ущерб в год", sublabel: "Столько теряет мир из-за кибератак", direction: "right" },
             ].map((stat, i) => {
               const getRevealClass = () => {
                 if (!isVisible) {
