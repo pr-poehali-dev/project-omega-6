@@ -84,8 +84,8 @@ export function AboutSection({ scrollToSection }: { scrollToSection?: (index: nu
           <MagneticButton size="lg" variant="primary" onClick={() => scrollToSection?.(1)}>
             Виды вирусов
           </MagneticButton>
-          <MagneticButton size="lg" variant="secondary" onClick={() => scrollToSection?.(4)}>
-            Задать вопрос
+          <MagneticButton size="lg" variant="secondary" onClick={() => scrollToSection?.(2)}>
+            Методы защиты
           </MagneticButton>
         </div>
       </div>
